@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZUSI Stock Swapper", "ZUSI Stock Swapper\ZUSI Stock Swapper.csproj", "{F638A2B7-7452-4DDE-8305-3EB54E364D40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F638A2B7-7452-4DDE-8305-3EB54E364D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F638A2B7-7452-4DDE-8305-3EB54E364D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F638A2B7-7452-4DDE-8305-3EB54E364D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F638A2B7-7452-4DDE-8305-3EB54E364D40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4B9EDC7-CBA4-4010-9BD1-9886F7FCDA94}
+	EndGlobalSection
+EndGlobal
