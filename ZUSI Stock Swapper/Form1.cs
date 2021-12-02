@@ -91,7 +91,10 @@ namespace ZUSI_Stock_Swapper
             foreach (XmlNode elem in elemList)
             {
                 if (elem["Datei"].Attributes["Dateiname"].Value.Contains(listBox1.SelectedItem.ToString())) {
-                    elem["Datei"].Attributes["Dateiname"].Value.Replace(listBox1.SelectedItem.ToString(), textBox2.Text);
+                    MessageBox.Show(elem["Datei"].Attributes["Dateiname"].Value + ", true");
+                    MessageBox.Show(elem["Datei"].Attributes["Dateiname"].Value.Replace(listBox1.SelectedItem.ToString(), textBox2.Text));
+                    elem["Datei"].Attributes["Dateiname"].Value = elem["Datei"].Attributes["Dateiname"].Value.Replace(listBox1.SelectedItem.ToString(), textBox2.Text);
+                    MessageBox.Show(elem["Datei"].Attributes["Dateiname"].Value + ", true");
                     XmlWriterSettings settings = new XmlWriterSettings();
                     settings.Encoding = new UTF8Encoding(false); //false means do not emit the BOM - emitting it will make the .bin files completely empty
                     using (TextWriter sw = new StreamWriter(textBox1.Text, false, new UTF8Encoding(false)))
