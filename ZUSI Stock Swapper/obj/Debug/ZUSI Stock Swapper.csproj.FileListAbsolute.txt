@@ -8,3 +8,13 @@ C:\Users\sbrug\Documents\GitHub\ZUSI Stock Swapper\ZUSI Stock Swapper\obj\Debug\
 C:\Users\sbrug\Documents\GitHub\ZUSI Stock Swapper\ZUSI Stock Swapper\obj\Debug\ZUSI Stock Swapper.csproj.CoreCompileInputs.cache
 C:\Users\sbrug\Documents\GitHub\ZUSI Stock Swapper\ZUSI Stock Swapper\obj\Debug\ZUSI Stock Swapper.exe
 C:\Users\sbrug\Documents\GitHub\ZUSI Stock Swapper\ZUSI Stock Swapper\obj\Debug\ZUSI Stock Swapper.pdb
+C:\Users\Simon\Documents\GitHub\ZUSI-Stock-Swapper\ZUSI Stock Swapper\bin\Debug\ZUSI Stock Swapper.exe.config
+C:\Users\Simon\Documents\GitHub\ZUSI-Stock-Swapper\ZUSI Stock Swapper\bin\Debug\ZUSI Stock Swapper.exe
+C:\Users\Simon\Documents\GitHub\ZUSI-Stock-Swapper\ZUSI Stock Swapper\bin\Debug\ZUSI Stock Swapper.pdb
+C:\Users\Simon\Documents\GitHub\ZUSI-Stock-Swapper\ZUSI Stock Swapper\obj\Debug\ZUSI Stock Swapper.csproj.AssemblyReference.cache
+C:\Users\Simon\Documents\GitHub\ZUSI-Stock-Swapper\ZUSI Stock Swapper\obj\Debug\ZUSI_Stock_Swapper.Form1.resources
+C:\Users\Simon\Documents\GitHub\ZUSI-Stock-Swapper\ZUSI Stock Swapper\obj\Debug\ZUSI_Stock_Swapper.Properties.Resources.resources
+C:\Users\Simon\Documents\GitHub\ZUSI-Stock-Swapper\ZUSI Stock Swapper\obj\Debug\ZUSI Stock Swapper.csproj.GenerateResource.cache
+C:\Users\Simon\Documents\GitHub\ZUSI-Stock-Swapper\ZUSI Stock Swapper\obj\Debug\ZUSI Stock Swapper.csproj.CoreCompileInputs.cache
+C:\Users\Simon\Documents\GitHub\ZUSI-Stock-Swapper\ZUSI Stock Swapper\obj\Debug\ZUSI Stock Swapper.exe
+C:\Users\Simon\Documents\GitHub\ZUSI-Stock-Swapper\ZUSI Stock Swapper\obj\Debug\ZUSI Stock Swapper.pdb
