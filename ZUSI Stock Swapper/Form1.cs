@@ -8,6 +8,7 @@ namespace ZUSI_Stock_Swapper
 {
     public partial class Form1 : Form
     {
+        string tempPath = Path.GetTempPath(); //the PCs temporary file directory
         public Form1()
         {
             InitializeComponent();
@@ -63,7 +64,7 @@ namespace ZUSI_Stock_Swapper
                     foreach (XmlNode elem in elemList)
                     {
                         string replacement = elem["DateiAussenansicht"].Attributes["Dateiname"].Value;
-                        string replaceType = substringFromTo(replacement, indexOfNth(selected, "\\", 2) + 1, indexOfNth(replacement, "\\", 3)); //get the type of fragment (e.g. Electroloks)
+                        string replaceType = substringFromTo(replacement, indexOfNth(replacement, "\\", 2) + 1, indexOfNth(replacement, "\\", 3)); //get the type of fragment (e.g. Electroloks)
                         if (!replaceType.Equals(trainType)) //train to be replaced and replacement train are not same type
                         {
                             MessageBox.Show("Fragment types do not match.\nYour selected item is part of the " + trainType + " family but the replacement you selected is " +
@@ -91,6 +92,15 @@ namespace ZUSI_Stock_Swapper
             foreach (XmlNode elem in elemList)
             {
                 if (elem["Datei"].Attributes["Dateiname"].Value.Contains(listBox1.SelectedItem.ToString())) {
+                    //save the original folder in Temp (in case the new .trn file doesn't work and/or user wants to revert)
+                    if (!Directory.Exists(tempPath + "ZSS"))
+                    {
+                        Directory.CreateDirectory(tempPath + "ZSS");
+                    }
+                    using (TextWriter sw = new StreamWriter(tempPath + "ZSS\\" + substringFromTo(textBox1.Text, textBox1.Text.LastIndexOf("\\") + 1, textBox1.Text.Length), false, new UTF8Encoding(false)))
+                    {
+                        doc.Save(sw);
+                    }
                     elem["Datei"].Attributes["Dateiname"].Value = elem["Datei"].Attributes["Dateiname"].Value.Replace(listBox1.SelectedItem.ToString(), textBox2.Text);
                     XmlWriterSettings settings = new XmlWriterSettings();
                     settings.Encoding = new UTF8Encoding(false); //false means do not emit the BOM - emitting it will make the .bin files completely empty
