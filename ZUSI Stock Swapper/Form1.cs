@@ -36,6 +36,8 @@ namespace ZUSI_Stock_Swapper
                 doc.Load(openFileDialog1.FileName);
                 XmlNodeList elemList = doc.GetElementsByTagName("FahrzeugInfo"); //get all components of the consist
 
+                listBox1.Items.Clear();
+
                 foreach (XmlNode elem in elemList)
                 {
                     listBox1.Items.Add(elem["Datei"].Attributes["Dateiname"].Value);
@@ -72,6 +74,8 @@ namespace ZUSI_Stock_Swapper
                     doc.PreserveWhitespace = true;
                     doc.Load(openFileDialog1.FileName);
                     XmlNodeList elemList = doc.GetElementsByTagName("FahrzeugVariante"); //get all components of the consist
+
+                    listBox2.Items.Clear();
 
                     foreach (XmlNode elem in elemList)
                     {
